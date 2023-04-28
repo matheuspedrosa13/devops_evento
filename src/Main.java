@@ -27,7 +27,7 @@ public class Main {
 
             System.out.print("Período (M - Manhã / T - Tarde / N - Noite): ");
             String periodoStr = scanner.nextLine().toUpperCase();
-            periodo periodo = periodo.valueOf(periodoStr);
+            Periodo periodo = Periodo.valueOf(periodoStr);
 
             Evento evento = new Evento(nome, cpf, telefone, dataNascimento, dataAgendamento, periodo);
 

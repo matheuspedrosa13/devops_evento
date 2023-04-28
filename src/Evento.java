@@ -6,9 +6,9 @@ public class Evento {
     private String telefone;
     private LocalDate dataNascimento;
     private LocalDate dataAgendamento;
-    private periodo periodo;
+    private Periodo periodo;
 
-    public Evento(String nome, String cpf, String telefone, LocalDate dataNascimento, LocalDate dataAgendamento, periodo periodo) {
+    public Evento(String nome, String cpf, String telefone, LocalDate dataNascimento, LocalDate dataAgendamento, Periodo periodo) {
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
@@ -58,12 +58,24 @@ public class Evento {
         this.dataAgendamento = dataAgendamento;
     }
 
-    public periodo getPeriodo() {
+    public Periodo getPeriodo() {
         return periodo;
     }
 
-    public void setPeriodo(periodo periodo) {
+    public void setPeriodo(Periodo periodo) {
         this.periodo = periodo;
+    }
+
+    @Override
+    public String toString() {
+        return "Evento{" +
+                "nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", dataNascimento=" + dataNascimento +
+                ", dataAgendamento=" + dataAgendamento +
+                ", periodo=" + periodo +
+                '}';
     }
 }
 
