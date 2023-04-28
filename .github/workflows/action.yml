@@ -32,5 +32,9 @@ jobs:
       run: |
             cd src
             javac -cp . EventoTeste.java
-      
+            
+    - name: Executando o teste
+      run: |
+            cd src
+            java EventoTeste
       
