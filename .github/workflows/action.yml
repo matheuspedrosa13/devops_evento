@@ -27,5 +27,14 @@ jobs:
       run: |
             cd src
             javac -cp . Main.java
-      
+            
+    - name: Compilar o Teste
+      run: |
+            cd src
+            javac -cp . EventoTeste.java
+            
+    - name: Executando o teste
+      run: |
+            cd src
+            java EventoTeste
       
